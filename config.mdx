@@ -1,0 +1,114 @@
+---
+title: 'Learn how to configure it'
+description: ''
+---
+
+## Let's start
+
+To begin with, the configuration of the program is quite basic, starting from the fact that it is a .json, but let's explain each part of it
+
+<Frame>
+  <img src="/images/config/1.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+In this part we have to put the exact path to the folder we want to backup, always using `\\`.
+
+<Frame>
+  <img src="/images/config/2.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+This is the configuration for the discord webhook, you should put the webhook url and at the top put "true".
+
+<Frame>
+  <img src="/images/config/3.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+Here we place the paths of the folders or files that we want to ignore at the moment of the backup, at the moment of placing a path we have to place `\\`. 
+
+<Frame>
+  <img src="/images/config/4.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+Explanation of each point
+
+<AccordionGroup>
+  <Accordion title="XAMPP">
+    The XAMPP option is only enabled if you are using XAMPP, if you installed MySQL on your own, set "false".
+  </Accordion>
+
+  <Accordion title="active_password">
+    This is activated if you have a password in the MySQL, otherwise set "false".
+  </Accordion>
+
+  <Accordion title="host">
+    It is advisable to keep it in "localhost" try not to change this
+  </Accordion>
+
+  <Accordion title="user">
+    Enter the user where the database you want to back up is located.
+  </Accordion>
+
+  <Accordion title="password">
+    If you have the "active_password" part activated, you have to enter the password here.
+  </Accordion>
+
+  <Accordion title="db">
+    Here is the name of the database you want to backup.
+  </Accordion>
+
+  <Accordion title="backup">
+    If you want to backup a MySQL database have this option enabled, otherwise set "false".
+  </Accordion>
+
+  <Accordion title="dump_path">
+    If you are not using XAMPP, you have to put the path where MySQL is installed, for example `C:\\Program Files\\MySQL\\MySQL Server 8.3\\bin\\`, remember that you have to put `\\` 
+  </Accordion>
+
+</AccordionGroup>
+
+<Frame>
+  <img src="/images/config/5.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+<AccordionGroup>
+  <Accordion title="active_password">
+    This is activated if you have a password in the MySQL, otherwise set "false".
+  </Accordion>
+
+  <Accordion title="host">
+    It is advisable to keep it in "localhost" try not to change this
+  </Accordion>
+
+  <Accordion title="user">
+    Enter the user where the database you want to back up is located.
+  </Accordion>
+
+  <Accordion title="password">
+    If you have the "active_password" part activated, you have to enter the password here.
+  </Accordion>
+
+  <Accordion title="db">
+    Here is the name of the database you want to backup.
+  </Accordion>
+
+  <Accordion title="backup">
+    If you want to backup a MySQL database have this option enabled, otherwise set "false".
+  </Accordion>
+
+  <Accordion title="dump_path">
+    If you are not using XAMPP, you have to put the path where MySQL is installed, for example `C:\\Program Files\\MariaDB 11.3\\bin\\`, remember that you have to put `\\` 
+  </Accordion>
+
+</AccordionGroup>
+
+<Frame>
+  <img src="/images/config/6.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+Here is the data to connect to the cloud, the section `max_backup_files` is to place a limit that files (This depends on how much space in the cloud has contracted with us), the other data must be filled with what we are going to send you
+
+<Frame>
+  <img src="/images/config/7.png" style={{ borderRadius: '0.5rem' }} />
+</Frame>
+
+In `backup_frequency` set how you are going to do the backups `daily, weekly, monthly`, In "backup_frequency" you set how you are going to do the backups "daily, weekly, monthly" and below is the time you are going to do the backup, the time is taken by your VPS/Dedicated in 24 hours format.
